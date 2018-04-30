@@ -1,0 +1,81 @@
+﻿<Page x:Class="KensCoffeeShop.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KensCoffeeShop"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HomePage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+
+
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+
+
+
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" TextElement.FontSize="26">
+            Ken's Coffee and Bagels
+        </Label>
+
+        <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" TextElement.FontSize="22">
+            Beverages
+        </Label>
+
+        <Frame Uid="OrderList">
+            <!-- This is where the orders will go-->
+        </Frame>
+
+        <Button Grid.Row="2" Grid.Column="0" Name="Coffee" Margin="7" Click="coffeeClick">
+            Coffee
+        </Button>
+
+        <Button Grid.Row="2" Grid.Column="1" Name="Tea" Margin="7">
+            Tea
+        </Button>
+
+        <Button Grid.Row="2" Grid.Column="2" Name="HotChocolate" Margin="7">
+            Hot Chocolate
+        </Button>
+
+        <Button Grid.Row="3" Grid.Column="0" Name="Lattes" Margin="7">
+            Lattes
+        </Button>
+
+        <Button Grid.Row="3" Grid.Column="1" Name="Mochas" Margin="7" Click="mochaClick">
+            Mochas
+        </Button>
+
+        <Button Grid.Row="3" Grid.Column="2" Name="ColdDrinks" Margin="7">
+            Cold Drinks
+        </Button>
+
+        <Button Grid.Row="4" Grid.Column="0" Name="Speciality" Margin="7">
+            Speciality
+        </Button>
+
+        <Button Grid.Row="4" Grid.Column="1" Name="Seasonal" Margin="7">
+            Seasonal
+        </Button>
+
+        <Button Grid.Row="4" Grid.Column="2" Name="Macchiatos" Margin="7">
+            Macchiatos
+        </Button>
+
+    </Grid>
+</Page>
